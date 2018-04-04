@@ -1,0 +1,39 @@
+#button {
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+#button>li {
+	float: left;
+}
+
+#button li a {
+	font-family: Arial;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 12px 12px;
+	background-color: #710038;
+	color: #fff;
+	display: block;
+}
+
+#button li a:hover {
+	background-color: #99004c;
+}
+
+#button li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+#button li:hover > ul {
+	display: block;
+}
+
+#button li ul li {
+	position: relative;
+}

@@ -1,0 +1,6 @@
+body{
+	background-image: url("../img/tiendaRopa.png");
+	background-repeat: no-repeat;
+	background-position: absolute; 
+	background-size:cover;
+}
