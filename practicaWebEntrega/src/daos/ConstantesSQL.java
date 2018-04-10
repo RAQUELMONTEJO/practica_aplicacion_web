@@ -22,7 +22,7 @@ public class ConstantesSQL {
 
 	public static final String GUARDAR_CAMBIOS_CLIENTE = "update tabla_clientes set nombre = ?, calle = ?, numero = ?, codigo_postal = ?, poblacion = ?, telefono = ?, email = ?, cliente/empresa = ? where id=?";
 
-	public static final String BORRAR_PRENDA_POR_ID = "delete * from tabla_ropa where id = ? ";
+	public static final String BORRAR_PRENDA_POR_ID = "delete from tabla_ropa where id = ? ";
 
-	public static final String BORRAR_CLIENTE_POR_ID = "delete * from tabla_clientes where id = ? ";
+	public static final String BORRAR_CLIENTE_POR_ID = "delete from tabla_clientes where id = ? ";
 }

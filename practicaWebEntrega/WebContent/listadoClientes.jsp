@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@page import="modelo.Clientes"%>
 <%@page import="java.util.List"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,13 +10,14 @@
 </head>
 <body>
 	<jsp:include page="menu.jsp"></jsp:include>
-	<br/><br/>
+	<br />
+	<br />
 	<%
 		List<Clientes> clientes = (List<Clientes>)request.getAttribute("clientes");
 
-		for(Clientes c : clientes){
-			//toda esta incrustacion esta bien para tener un caso practico
-			//pero un poco mas adelante se hará usando etiquetas
+			for(Clientes c : clientes){
+		//toda esta incrustacion esta bien para tener un caso practico
+		//pero un poco mas adelante se hará usando etiquetas
 	%>
 	<div style="margin: 10px">
 		Nombre:
@@ -39,5 +41,10 @@
 	<%
 		}//end foreach
 	%>
+	<c:if test="${mostrarAlert!=null }">
+		<script type="text/javascript">
+			alert("Registro borrado correctamente.")
+		</script>
+	</c:if>
 </body>
 </html>

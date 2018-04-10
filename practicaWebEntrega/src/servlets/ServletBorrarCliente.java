@@ -22,7 +22,8 @@ public class ServletBorrarCliente extends HttpServlet {
 		ClientesDAO clientesDAO = new ClientesDAOImpl();
 		Clientes clienteAeditar = clientesDAO.borrarClientesPorId(id);
 		request.setAttribute("clienteAeditar", clienteAeditar);
-		request.getRequestDispatcher("borrarClienteOK.jsp").forward(request,
+		request.setAttribute("mostrarAlert", true);
+		request.getRequestDispatcher("ServletListadoCliente").forward(request,
 				response);
 		System.out.println("borrar cliente de id: " + id);
 	}

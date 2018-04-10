@@ -8,17 +8,19 @@
 </head>
 <body>
 	<jsp:include page="menu.jsp"></jsp:include>
-	<br/><br/>
+	<br />
+	<br />
 	<c:forEach items="${clientes}" var="cliente">
 		<div style="margin: 8px">
-		<br/><br/><br/>
-			Nombre: ${cliente.nombre}<br /> Calle: ${cliente.calle}<br />
-			Número: ${cliente.numero}<br /> Código postal:
-			${cliente.codigo_postal}<br /> Población: ${cliente.poblacion}<br />
-			Teléfono: ${cliente.telefono}<br /> Email: ${cliente.email}<br />
-			Tipo de cliente: ${cliente.tipoCliente}<br /> <br /> <a
-				href="ServletBorrarCliente?id=${cliente.id}">BORRAR</a> <a
-				href="ServletEditarCliente?id=${cliente.id}">EDITAR</a>
+			<br /> <br /> <br /> Nombre: ${cliente.nombre}<br /> Calle:
+			${cliente.calle}<br /> Número: ${cliente.numero}<br /> Código
+			postal: ${cliente.codigo_postal}<br /> Población:
+			${cliente.poblacion}<br /> Teléfono: ${cliente.telefono}<br />
+			Email: ${cliente.email}<br /> Tipo de cliente:
+			${cliente.tipoCliente}<br /> <br /> <a
+				href="ServletBorrarCliente?id=${cliente.id}"
+				onclick="return confirm('¿Estás seguro de que deseas borrarlo?');">BORRAR</a>
+			<a href="ServletEditarCliente?id=${cliente.id}">EDITAR</a>
 		</div>
 	</c:forEach>
 

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Borrado de usuario ok</title>
+<title>Borrado de prenda ok</title>
 </head>
 <body>
 
-	<h2>Usuario borrado correctamente</h2>
+	<h2>Prenda borrado correctamente</h2>
 	<!-- cambiar redireccion del servlet -->
 	<a href="index.jsp">Volver al inicio.</a>
 

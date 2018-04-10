@@ -54,6 +54,7 @@ public class ClientesDAOImpl extends GenericDAO implements ClientesDAO {
 				cliente.setTelefono(resultado.getString("telefono"));
 				cliente.setEmail(resultado.getString("email"));
 				cliente.setTipoCliente(resultado.getString("tipo"));
+				cliente.setId(resultado.getInt("id"));
 				clientes.add(cliente);
 			}// end while
 		} catch (SQLException e) {
